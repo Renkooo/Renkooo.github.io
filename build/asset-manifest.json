@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.377ea270.css",
+    "main.js": "/static/js/main.d9bbc439.js",
+    "static/media/auticko_a_kamera.jpg": "/static/media/auticko_a_kamera.2375193cba9e2c0a3159.jpg",
+    "static/media/bootstrap-icons.woff?": "/static/media/bootstrap-icons.1295669cd4e305c97f2c.woff",
+    "static/media/bootstrap-icons.woff2?": "/static/media/bootstrap-icons.92ea18a81d737146ff04.woff2",
+    "index.html": "/index.html",
+    "main.377ea270.css.map": "/static/css/main.377ea270.css.map",
+    "main.d9bbc439.js.map": "/static/js/main.d9bbc439.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.377ea270.css",
+    "static/js/main.d9bbc439.js"
+  ]
+}
