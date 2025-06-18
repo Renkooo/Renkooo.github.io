@@ -1,0 +1,132 @@
+:root {
+  --gray-0: #ffffff;
+  --gray-1: #f0f0f0;
+  --gray-2: #b0b0b0;
+  --gray-3: #707070;
+  --gray-4: #333333;
+  --gray-5: #dddddd;
+}
+
+/* Container */
+.project-container {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 1rem;
+  font-family: Arial, sans-serif;
+  color: #222;
+  line-height: 1.5;
+}
+
+/* Header */
+.project-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.project-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+.project-header h2 {
+  font-size: 1.75rem;
+  color: #555;
+}
+
+/* Sections */
+.project-section {
+  margin-bottom: 2rem;
+}
+.project-section h3 {
+  font-size: 1.5rem;
+  border-bottom: 2px solid var(--gray-5);
+  padding-bottom: 0.25rem;
+  margin-bottom: 1rem;
+}
+.project-section h4 {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+}
+.project-section p,
+.project-section ul {
+  margin: 0.5rem 0 1rem;
+}
+
+/* Table */
+.project-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+.project-table th,
+.project-table td {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  text-align: center;
+}
+.project-table th {
+  background-color: #f9f9f9;
+}
+.project-note {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Code */
+.project-section code {
+  background-color: #f4f4f4;
+  padding: 0.1rem 0.3rem;
+  border-radius: 3px;
+  font-family: 'Courier New', monospace;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .project-table th,
+  .project-table td {
+    font-size: 0.85rem;
+    padding: 0.4rem;
+  }
+  .project-header h1 {
+    font-size: 2rem;
+  }
+  .project-header h2 {
+    font-size: 1.25rem;
+  }
+}
+
+/* picture */
+.project-objective {
+  position: relative;
+  margin-bottom: 2rem;
+  padding-right: 32rem; 
+}
+
+.project-objective img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30rem;
+  border-radius: 1rem;
+  display: block;
+}
+
+@media (max-width: 1200px) {
+  .project-objective {
+    padding-right: 28rem;
+  }
+  .project-objective img {
+    width: 24rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-objective {
+    padding-right: 0;
+  }
+  .project-objective img {
+    position: relative;
+    top: auto;
+    right: auto;
+    width: 100%;
+    margin-top: 1rem;
+  }
+}
