@@ -1,6 +1,6 @@
-import React from 'react';
+import { useEffect } from 'react';
 import './Project.css';
-// import connectImage from './figures/connect4.png';
+import connectImage from './figures/connect4.jpg';
 
 import { DiJava, DiReact } from 'react-icons/di';
 import { SiSpringboot, SiThymeleaf, SiFirebase } from 'react-icons/si';
@@ -10,6 +10,9 @@ import { AiOutlineDatabase, AiOutlineApi } from 'react-icons/ai';
 
 
 function Connect4() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="project-container">
       <header className="project-header">
@@ -20,9 +23,8 @@ function Connect4() {
       {/* Overview & Key Objective */}
       <section className="project-section project-objective">
         <h3>Overview &amp; Objective</h3>
-        {/* <img src={connectImage} alt="Connect 4 gameplay screenshot" /> */}
         <p>
-          A versatile Connect Four platform delivering both classic and social gaming experiences:
+          Connect Four web app supporting classic gameplay and social features:
         </p>
         <ul>
           <li>Responsive game board rendered with Thymeleaf and CSS for desktop & mobile play</li>
@@ -33,19 +35,20 @@ function Connect4() {
           <li>Community features: leave comments, star ratings, and view a global leaderboard</li>
           <li>Configurable data layers: Spring JDBC, Spring Data JPA, or remote REST via profiles</li>
         </ul>
+        <img src={connectImage} alt="Connect 4 gameplay screenshot"/>
       </section>
 
       {/* Technologies & Tools */}
       <section className="project-section">
         <h3>Technologies &amp; Tools</h3>
         <ul>
-          <li><strong>Backend:</strong> Java 17, Spring Boot 3, Spring MVC, Spring Data JPA, Spring JDBC</li>
+          <li><strong>Backend:</strong> Java 17, Spring Boot, Spring MVC, Spring Data JPA, Spring JDBC</li>
           <li><strong>Database:</strong> H2 embedded DB (development) / PostgreSQL (production-ready) storing scores, comments &amp; ratings</li>
           <li><strong>Templating &amp; APIs:</strong> Thymeleaf fragments for UI, Spring REST controllers for SPA data</li>
-          <li><strong>Frontend (Planned SPA):</strong> React 18, React Router, Axios, Bootstrap 5</li>
+          <li><strong>Frontend:</strong> React, React Router, Axios, Bootstrap</li>
           <li><strong>Authentication:</strong> Firebase Auth with email/password and Google OAuth flows</li>
-          <li><strong>Testing:</strong> JUnit 5 unit tests, MockMvc integration tests, React Testing Library (planned)</li>
-          <li><strong>Build &amp; Deployment:</strong> Maven, npm, Dockerfile ready for containerization</li>
+          <li><strong>Testing:</strong> JUnit unit tests, MockMvc integration tests, React Testing Library (planned)</li>
+          <li><strong>Build &amp; Deployment:</strong> Maven, npm, Dockerfile</li>
         </ul>
       </section>
 
@@ -68,7 +71,7 @@ function Connect4() {
       <section className="project-section">
         <h3>Key Features</h3>
         <ul>
-          <li>Optimized 7×6 grid logic: dropDisc() & checkWin() scanning in four directions</li>
+          <li>Optimized 7x6 grid logic: dropDisc() & checkWin() scanning in four directions</li>
           <li>Heuristic AI opponent evaluating potential threats and wins</li>
           <li>Anonymous guest play or authenticated sessions unlocking comments & ratings</li>
           <li>Global leaderboard updating after each game, backed by database</li>

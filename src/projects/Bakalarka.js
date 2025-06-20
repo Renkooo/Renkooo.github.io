@@ -54,22 +54,22 @@ function Bakalarka() {
             <li>YOLOv5</li>
           </ul>
         </section>
+      </section>
 
-        {/* System Architecture */}
-        <section className="project-section">
-          <h3>System Architecture</h3>
-          <ul>
-            <li>
-              Raspberry Pi processes camera input and performs object detection
-              using YOLOv5.
-            </li>
-            <li>
-              Detection output is fed to a control algorithm that determines
-              vehicle direction & speed based on sign type & position.
-            </li>
-            <li>Motors are driven via GPIO pins through the HAT module.</li>
-          </ul>
-        </section>
+      {/* System Architecture */}
+      <section className="project-section">
+        <h3>System Architecture</h3>
+        <ul>
+          <li>
+            Raspberry Pi processes camera input and performs object detection
+            using YOLOv5.
+          </li>
+          <li>
+            Detection output is fed to a control algorithm that determines
+            vehicle direction & speed based on sign type & position.
+          </li>
+          <li>Motors are driven via GPIO pins through the HAT module.</li>
+        </ul>
       </section>
 
       {/* Development Process */}

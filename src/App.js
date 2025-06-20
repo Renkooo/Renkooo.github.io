@@ -14,6 +14,9 @@ import Kalkulacka from './projects/Kalkulacka';
 import { HashLink } from 'react-router-hash-link';
 
 function App() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const [darkMode, setDarkMode] = useState(true);
 
   const [menuOpen, setMenuOpen] = useState(false);
