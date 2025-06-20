@@ -31,6 +31,16 @@
   color: #555;
 }
 
+/* Responsive Header for Mobile Devices */
+@media (max-width: 200px) {
+  .project-header h1 {
+    font-size: 2.75rem;
+  }
+  .project-header h2 {
+    font-size: 2.25rem;
+  }
+}
+
 /* Sections */
 .project-section {
   margin-bottom: 2rem;
@@ -129,4 +139,45 @@
     width: 100%;
     margin-top: 1rem;
   }
+}
+
+/* Used Technologies */
+.used-technologies .tech-icons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.used-technologies .icon {
+  background: var(--gray-0);
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.25s ease;
+}
+
+.used-technologies .icon:hover {
+  transform: translateY(-8px);
+}
+
+.used-technologies .icon i {
+  font-size: 2rem;
+  color: var(--gray-3);
+  margin-bottom: 0.5rem;
+}
+
+.used-technologies .icon span {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--gray-4);
+  font-weight: bold;
+}
+
+
+
+
+.section iframe {
+  display: block;
 }

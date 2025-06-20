@@ -86,7 +86,7 @@ function App() {
                     <p>TODO</p>
                   </Link>
                   <Link to="/projects/isi" className="project-card">
-                    <h3>Lunar Landing</h3>
+                    <h3>Lunar Lockout</h3>
                     <p>TODO</p>
                   </Link>
                   <Link to="/projects/connect-4" className="project-card">

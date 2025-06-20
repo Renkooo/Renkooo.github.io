@@ -32,44 +32,44 @@ function Bakalarka() {
         <p>
           This project was my bachelor’s thesis and received a final grade of <strong>A</strong>.
         </p>
-        <img src={carImage} alt="Autonomous vehicle prototype" />
-      </section>
+        <img src={carImage} alt="Autonomous vehicle prototype"/>
 
-      {/* Technologies Used */}
-      <section className="project-section">
-        <h3>Technologies Used</h3>
-        <p><strong>Hardware:</strong></p>
-        <ul>
-          <li>Raspberry Pi 4B (8 GB RAM)</li>
-          <li>OV5647 camera (CSI interface)</li>
-          <li>Niceboy webcam</li>
-          <li>4× DC motors (gear ratio 1:48)</li>
-          <li>HAT module for power & motor control</li>
-        </ul>
-        <p><strong>Software:</strong></p>
-        <ul>
-          <li>Raspberry Pi OS (Raspbian) / Debian</li>
-          <li>Python</li>
-          <li>OpenCV</li>
-          <li>PyTorch</li>
-          <li>YOLOv5</li>
-        </ul>
-      </section>
+        {/* Technologies Used */}
+        <section className="project-section">
+          <h3>Technologies Used</h3>
+          <p><strong>Hardware:</strong></p>
+          <ul>
+            <li>Raspberry Pi 4B (8 GB RAM)</li>
+            <li>OV5647 camera (CSI interface)</li>
+            <li>Niceboy webcam</li>
+            <li>4× DC motors (gear ratio 1:48)</li>
+            <li>HAT module for power & motor control</li>
+          </ul>
+          <p><strong>Software:</strong></p>
+          <ul>
+            <li>Raspberry Pi OS (Raspbian) / Debian</li>
+            <li>Python</li>
+            <li>OpenCV</li>
+            <li>PyTorch</li>
+            <li>YOLOv5</li>
+          </ul>
+        </section>
 
-      {/* System Architecture */}
-      <section className="project-section">
-        <h3>System Architecture</h3>
-        <ul>
-          <li>
-            Raspberry Pi processes camera input and performs object detection
-            using YOLOv5.
-          </li>
-          <li>
-            Detection output is fed to a control algorithm that determines
-            vehicle direction & speed based on sign type & position.
-          </li>
-          <li>Motors are driven via GPIO pins through the HAT module.</li>
-        </ul>
+        {/* System Architecture */}
+        <section className="project-section">
+          <h3>System Architecture</h3>
+          <ul>
+            <li>
+              Raspberry Pi processes camera input and performs object detection
+              using YOLOv5.
+            </li>
+            <li>
+              Detection output is fed to a control algorithm that determines
+              vehicle direction & speed based on sign type & position.
+            </li>
+            <li>Motors are driven via GPIO pins through the HAT module.</li>
+          </ul>
+        </section>
       </section>
 
       {/* Development Process */}
