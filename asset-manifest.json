@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.4c0f702b.css",
-    "main.js": "/static/js/main.cb3531cf.js",
+    "main.css": "/static/css/main.2c0e7d09.css",
+    "main.js": "/static/js/main.09a5ef74.js",
     "static/media/auticko_a_kamera.jpg": "/static/media/auticko_a_kamera.5724014c90e186bdf64c.jpg",
     "static/media/bootstrap-icons.woff?": "/static/media/bootstrap-icons.1295669cd4e305c97f2c.woff",
     "static/media/bootstrap-icons.woff2?": "/static/media/bootstrap-icons.92ea18a81d737146ff04.woff2",
@@ -14,12 +14,18 @@
     "static/media/6.jpg": "/static/media/6.e9d50c41d51432a88ad1.jpg",
     "static/media/4.jpg": "/static/media/4.8ca0c8991678d4f8013c.jpg",
     "static/media/3.jpg": "/static/media/3.46fa461e7751f3e3ff21.jpg",
+    "static/media/Obrazok1.png": "/static/media/Obrazok1.3177b7f637414f3f4598.png",
+    "static/media/Obrazok6.png": "/static/media/Obrazok6.be5460cf5ce59b1e0ce4.png",
+    "static/media/Obrazok2.png": "/static/media/Obrazok2.a69ae0c70af154e0196b.png",
+    "static/media/Obrazok3.png": "/static/media/Obrazok3.80490274baf321c5eba0.png",
+    "static/media/Obrazok5.png": "/static/media/Obrazok5.71fd0f1de944f12fa5a3.png",
+    "static/media/Obrazok4.png": "/static/media/Obrazok4.67b7b6f7f827233ffefb.png",
     "index.html": "/index.html",
-    "main.4c0f702b.css.map": "/static/css/main.4c0f702b.css.map",
-    "main.cb3531cf.js.map": "/static/js/main.cb3531cf.js.map"
+    "main.2c0e7d09.css.map": "/static/css/main.2c0e7d09.css.map",
+    "main.09a5ef74.js.map": "/static/js/main.09a5ef74.js.map"
   },
   "entrypoints": [
-    "static/css/main.4c0f702b.css",
-    "static/js/main.cb3531cf.js"
+    "static/css/main.2c0e7d09.css",
+    "static/js/main.09a5ef74.js"
   ]
 }
