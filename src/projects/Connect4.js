@@ -2,12 +2,13 @@ import { useEffect } from 'react';
 import './Project.css';
 import connectImage from './figures/connect4.jpg';
 
-import { DiJava, DiReact } from 'react-icons/di';
-import { SiSpringboot, SiThymeleaf, SiFirebase } from 'react-icons/si';
-
-// Generic icons
-import { AiOutlineDatabase, AiOutlineApi } from 'react-icons/ai';
-
+import {
+  javaLogo,
+  springLogo,
+  thymeleafLogo,
+  reactLogo,
+  firebaseLogo
+} from './figures/logo.js';
 
 function Connect4() {
   useEffect(() => {
@@ -17,7 +18,6 @@ function Connect4() {
     <div className="project-container">
       <header className="project-header">
         <h1>Connect 4 Web App</h1>
-        {/* <h2>Java • Spring Boot 3 • Thymeleaf • H2 • JPA • JDBC • REST • React • Firebase Auth (Email & Google)</h2> */}
       </header>
 
       {/* Overview & Key Objective */}
@@ -84,39 +84,23 @@ function Connect4() {
         <h3>Used Technologies</h3>
         <div className="tech-icons">
           <div className="icon">
-            <DiJava size="2em" />
-            <span>Java 17</span>
+            <img src={javaLogo} alt="Google Maps" style={{width: '2em', height: '2em'}} />
+            <span>Java</span>
           </div>
           <div className="icon">
-            <SiSpringboot size="2em" />
-            <span>Spring Boot 3</span>
+            <img src={springLogo} alt="Google Maps" style={{width: '2em', height: '2em'}} />
+            <span>Spring</span>
           </div>
           <div className="icon">
-            <SiThymeleaf size="2em" />
+            <img src={thymeleafLogo} alt="Google Maps" style={{width: '2em', height: '2em'}} />
             <span>Thymeleaf</span>
           </div>
           <div className="icon">
-            <AiOutlineDatabase size="2em" />
-            <span>H2 Database</span>
-          </div>
-          <div className="icon">
-            <AiOutlineDatabase size="2em" />
-            <span>Spring Data JPA</span>
-          </div>
-          <div className="icon">
-            <AiOutlineDatabase size="2em" />
-            <span>Spring JDBC</span>
-          </div>
-          <div className="icon">
-            <AiOutlineApi size="2em" />
-            <span>REST APIs</span>
-          </div>
-          <div className="icon">
-            <DiReact size="2em" />
+            <img src={reactLogo} alt="Google Maps" style={{width: '2em', height: '2em'}} />
             <span>React</span>
           </div>
           <div className="icon">
-            <SiFirebase size="2em" />
+            <img src={firebaseLogo} alt="Google Maps" style={{width: '2em', height: '2em'}} />
             <span>Firebase Auth</span>
           </div>
         </div>
@@ -127,10 +111,6 @@ function Connect4() {
         <div className="icons">
           <a href="https://youtu.be/RngqCiek7b0">
             <i className="bi bi-youtube"></i>
-          </a>
-          {/* <a href="#"> */}
-          <a>
-            <i className="bi bi-github"></i>
           </a>
         </div>
       </section>

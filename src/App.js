@@ -2,7 +2,6 @@ import './App.css';
 import { useState, useRef, useEffect } from 'react';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import { Routes, Route, Link } from 'react-router-dom';
-// import { Link as ScrollLink } from 'react-scroll';
 
 import Bakalarka from './projects/Bakalarka';
 import ISI from './projects/ISI';
@@ -11,6 +10,7 @@ import SkryteUmenie from './projects/SkryteUmenie';
 import SMAD from './projects/SMAD';
 import ZapC from './projects/ZapC';
 import Kalkulacka from './projects/Kalkulacka';
+import Haskell from './projects/Haskell';
 import { HashLink } from 'react-router-hash-link';
 
 function App() {
@@ -101,16 +101,20 @@ function App() {
                     <p>Mobile app for exploring hidden art in Košice using React Native.</p>
                   </Link>
                   <Link to="/projects/smad" className="project-card">
-                    <h3>SMAD</h3>
-                    <p>Simulator and Analyzer of Drones — a physics-based simulation project.</p>
+                    <h3>Deep-RL for LunarLander</h3>
+                    <p>TODO</p>
                   </Link>
                   <Link to="/projects/zap-c" className="project-card">
-                    <h3>zap-c</h3>
-                    <p>First C program solving linear equations from Základy Algoritmizácie.</p>
+                    <h3>Invincible Game</h3>
+                    <p>TODO</p>
                   </Link>
                   <Link to="/projects/kalkulacka" className="project-card">
-                    <h3>kalkulacka</h3>
-                    <p>Simple GUI calculator using Java Swing.</p>
+                    <h3>Hand-crafted Scientific Calculator</h3>
+                    <p>TODO</p>
+                  </Link>
+                  <Link to="/projects/haskell" className="project-card">
+                    <h3>Haskell</h3>
+                    <p>TODO</p>
                   </Link>
                 </div>
               </section>
@@ -147,6 +151,7 @@ function App() {
         <Route path="/projects/smad" element={<SMAD />} />
         <Route path="/projects/zap-c" element={<ZapC />} />
         <Route path="/projects/kalkulacka" element={<Kalkulacka />} />
+        <Route path="/projects/haskell" element={<Haskell />} />
       </Routes>
     </div>
   );

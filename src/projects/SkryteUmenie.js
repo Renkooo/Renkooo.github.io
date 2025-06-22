@@ -1,7 +1,16 @@
 import './Project.css';
-import image from './figures/skryteUmenie/1.jpg';
 import { useState, useEffect } from 'react';
-import { DiReact, DiPython, DiJavascript1 } from 'react-icons/di';
+
+import {
+  expoLogo,
+  mapboxLogo,
+  supabaseLogo,
+  figmaLogo,
+  googleMapsLogo,
+  pythonLogo,
+  reactnativeLogo,
+  javascriptLogo
+} from './figures/logo.js';
 
 
 const galleryImages = [
@@ -49,7 +58,7 @@ function SkryteUmenie() {
 
       {/* Topic & Objective */}
       <section className="project-section">
-        <h3>Topic &amp; Objective</h3>
+        <h3>Overview</h3>
         <p>
           Košice is a city rich in history and culture with over 400 public artworks
           scattered across its streets, parks, and hidden corners. Yet many of these
@@ -72,6 +81,10 @@ function SkryteUmenie() {
           <li>User contributions: upload photos, leave comments, rate and bookmark favorites</li>
           <li>Offline-first design: cached map tiles and artwork data ensure continuity in the field</li>
         </ul>
+        <p>
+          Working in close collaboration with Cassovia Code as part of the Živé IT projekty initiative by Košice IT Valley, 
+          our team delivered a robust mobile experience that placed us <strong>8th</strong> out of 67 competing teams in the regional competetion.
+        </p>
       </section>
 
       {/* Technologies Used */}
@@ -79,35 +92,35 @@ function SkryteUmenie() {
         <h3>Used Technologies</h3>
         <div className="tech-icons">
           <div className="icon">
-            <DiReact size="2em" />
+            <img src={reactnativeLogo} alt="Google Maps" style={{width: '2em', height: '2em'}} />
             <span>React Native</span>
           </div>
           <div className="icon">
-            <DiJavascript1 size="2em" />
+            <img src={javascriptLogo} alt="Google Maps" style={{width: '2em', height: '2em'}} />
             <span>JavaScript</span>
           </div>
           <div className="icon">
-            <img src="https://images.seeklogo.com/logo-png/45/1/expo-go-app-logo-png_seeklogo-457073.png" alt="Expo Go" style={{width: '2em', height: '2em'}} />
+            <img src={expoLogo} alt="Expo Go" style={{width: '2em', height: '2em'}} />
             <span>Expo Go</span>
           </div>
           <div className="icon">
-            <img src="https://images.seeklogo.com/logo-png/44/1/mapbox-logo-png_seeklogo-444116.png" alt="Mapbox" style={{width: '2em', height: '2em'}} />
+            <img src={mapboxLogo} alt="Mapbox" style={{width: '2em', height: '2em'}} />
             <span>Mapbox</span>
           </div>
           <div className="icon">
-            <img src="https://seeklogo.com/images/S/supabase-logo-DCC676FFE2-seeklogo.com.png" alt="Supabase" style={{width: '2em', height: '2em'}} />
+            <img src={supabaseLogo} alt="Supabase" style={{width: '2em', height: '2em'}} />
             <span>Supabase</span>
           </div>
           <div className="icon">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" alt="Figma" style={{width: '2em', height: '2em'}} />
+            <img src={figmaLogo} alt="Figma" style={{width: '2em', height: '2em'}} />
             <span>Figma</span>
           </div>
           <div className="icon">
-            <img src="https://images.seeklogo.com/logo-png/36/1/google-maps-icon-2020-logo-png_seeklogo-368992.png" alt="Google Maps" style={{width: '2em', height: '2em'}} />
+            <img src={googleMapsLogo} alt="Google Maps" style={{width: '2em', height: '2em'}} />
             <span>Google Maps</span>
           </div>
           <div className="icon">
-            <DiPython size="2em" />
+            <img src={pythonLogo} alt="Google Maps" style={{width: '2em', height: '2em'}} />
             <span>Python</span>
           </div>
         </div>
@@ -159,15 +172,13 @@ function SkryteUmenie() {
         </ol>
       </section>
 
-      {/* Results & Learnings */}
       <section className="project-section">
-        <h3>Results &amp; Learnings</h3>
-        <ul>
-          <li>Users can explore hidden art even without network, improving tourist engagement</li>
-          <li>Redux Persist greatly simplified offline data management</li>
-          <li>Expo’s OTA updates enabled rapid fixes and content additions without app-store redeploys</li>
-          <li>Gamification elements increased time spent in app and repeat visits</li>
-        </ul>
+        <h3>Links</h3>
+        <div className="icons">
+          <a href="">
+            <i className="bi bi-youtube"></i>
+          </a>
+        </div>
       </section>
 
       <section className="project-section">

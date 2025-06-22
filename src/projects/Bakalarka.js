@@ -2,6 +2,14 @@ import './Project.css';
 import carImage from './figures/auticko_a_kamera.jpg';
 import { useEffect } from 'react';
 
+import {
+  pythonLogo,
+  raspberryPiLogo,
+  opencvLogo,
+  pytorchLogo,
+  YOLOLogo
+} from './figures/logo.js';
+
 function Bakalarka() {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -34,9 +42,20 @@ function Bakalarka() {
         </p>
         <img src={carImage} alt="Autonomous vehicle prototype"/>
 
-        {/* Technologies Used */}
+        {/* System Architecture */}
         <section className="project-section">
-          <h3>Technologies Used</h3>
+          <h3>System Architecture</h3>
+          <ul>
+            <li>
+              Raspberry Pi processes camera input and performs object detection
+              using YOLOv5.
+            </li>
+            <li>
+              Detection output is fed to a control algorithm that determines
+              vehicle direction & speed based on sign type & position.
+            </li>
+            <li>Motors are driven via GPIO pins through the HAT module.</li>
+          </ul>
           <p><strong>Hardware:</strong></p>
           <ul>
             <li>Raspberry Pi 4B (8 GB RAM)</li>
@@ -45,31 +64,33 @@ function Bakalarka() {
             <li>4× DC motors (gear ratio 1:48)</li>
             <li>HAT module for power & motor control</li>
           </ul>
-          <p><strong>Software:</strong></p>
-          <ul>
-            <li>Raspberry Pi OS (Raspbian) / Debian</li>
-            <li>Python</li>
-            <li>OpenCV</li>
-            <li>PyTorch</li>
-            <li>YOLOv5</li>
-          </ul>
         </section>
       </section>
 
-      {/* System Architecture */}
-      <section className="project-section">
-        <h3>System Architecture</h3>
-        <ul>
-          <li>
-            Raspberry Pi processes camera input and performs object detection
-            using YOLOv5.
-          </li>
-          <li>
-            Detection output is fed to a control algorithm that determines
-            vehicle direction & speed based on sign type & position.
-          </li>
-          <li>Motors are driven via GPIO pins through the HAT module.</li>
-        </ul>
+      <section className="project-section used-technologies">
+        <h3>Used Technologies</h3>
+        <div className="tech-icons">
+          <div className="icon">
+            <img src={raspberryPiLogo} alt="Google Maps" style={{width: '2em', height: '2em'}} />
+            <span>Raspberry Pi</span>
+          </div>
+          <div className="icon">
+            <img src={opencvLogo} alt="Google Maps" style={{width: '2em', height: '2em'}} />
+            <span>OpenCV</span>
+          </div>
+          <div className="icon">
+            <img src={pythonLogo} alt="Google Maps" style={{width: '2em', height: '2em'}} />
+            <span>Python</span>
+          </div>
+          <div className="icon">
+            <img src={pytorchLogo} alt="Google Maps" style={{width: '2em', height: '2em'}} />
+            <span>PyTorch</span>
+          </div>
+          <div className="icon">
+            <img src={YOLOLogo} alt="Google Maps" style={{width: '2em', height: '2em'}} />
+            <span>YOLO</span>
+          </div>
+        </div>
       </section>
 
       {/* Development Process */}

@@ -35,8 +35,27 @@ body {
   justify-content: flex-end;
   align-items: center;
   gap: 1rem;
-  cursor: pointer;
 
+}
+.navbar .nav-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem; 
+}
+
+.home-btn {
+  margin-right: 2rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar nav a,
+.menu-toggle,
+.toggle-mode {
+  cursor: pointer;
 }
 
 .navbar nav a {
