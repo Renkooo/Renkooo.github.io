@@ -53,7 +53,6 @@ function SkryteUmenie() {
     <div className="project-container">
       <header className="project-header">
         <h1>Skryté Umenie - Mapa košických pokladov</h1>
-        {/* <h2>React Native • Expo • Mapbox • AsyncStorage</h2> */}
       </header>
 
       {/* Topic & Objective */}
@@ -175,8 +174,17 @@ function SkryteUmenie() {
       <section className="project-section">
         <h3>Links</h3>
         <div className="icons">
-          <a href="">
+          <a href="https://youtu.be/y_xJg7MK6L4"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i className="bi bi-youtube"></i>
+          </a>
+          <a href="https://skryteumenie.me"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="bi bi-globe"></i>
           </a>
         </div>
       </section>

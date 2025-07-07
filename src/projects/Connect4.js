@@ -106,14 +106,14 @@ function Connect4() {
         </div>
       </section>
 
-      <section className="project-section">
+      {/* <section className="project-section">
         <h3>Links</h3>
         <div className="icons">
           <a href="https://youtu.be/RngqCiek7b0">
             <i className="bi bi-youtube"></i>
           </a>
         </div>
-      </section>
+      </section> */}
 
     </div>
   );

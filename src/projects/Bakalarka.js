@@ -61,7 +61,7 @@ function Bakalarka() {
             <li>Raspberry Pi 4B (8 GB RAM)</li>
             <li>OV5647 camera (CSI interface)</li>
             <li>Niceboy webcam</li>
-            <li>4× DC motors (gear ratio 1:48)</li>
+            <li>4x DC motors (gear ratio 1:48)</li>
             <li>HAT module for power & motor control</li>
           </ul>
         </section>

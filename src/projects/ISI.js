@@ -41,7 +41,7 @@ function ISI() {
         <section className="project-section">
           <h3>Game Description</h3>
           <p>
-            Lunar Lockout is played on a square grid of size N×N. One cell contains the red “landed
+            Lunar Lockout is played on a square grid of size NxN. One cell contains the red “landed
             module” labeled <code>X</code>, and several cells hold immobile obstacles labeled
             <code>A</code> through <code>E</code>. Every move slides <code>X</code> in one of the
             four directions (up, down, left, right) until it collides with an obstacle; if a slide would
@@ -55,7 +55,7 @@ function ISI() {
           <ul>
             <li>
               <strong>State:</strong> a 2D matrix of symbols: <code>0</code> = empty, <code>X</code> =
-              player, <code>A–E</code> = obstacles.
+              player, <code>A-E</code> = obstacles.
             </li>
             <li>
               <strong>Move:</strong> tuple (<code>direction</code>), e.g. <code>'U'</code> for up.
@@ -63,7 +63,7 @@ function ISI() {
             </li>
             <li>
               <strong>Visualization:</strong> Pygame window displays the board and allows step-through
-              of each algorithm, with controls to select map (levels 1–10) and algorithm.
+              of each algorithm, with controls to select map (levels 1-10) and algorithm.
             </li>
           </ul>
         </section>
@@ -145,12 +145,11 @@ function ISI() {
       <section className="project-section">
         <h3>Links</h3>
         <div className="icons">
-          <a href="https://youtu.be/pBeJwEwYgks">
+          <a href="https://youtu.be/pBeJwEwYgks"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i className="bi bi-youtube"></i>
-          </a>
-          {/* <a href="#"> */}
-          <a>
-            <i className="bi bi-github"></i>
           </a>
         </div>
       </section>
