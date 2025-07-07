@@ -1,10 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.2c0e7d09.css",
-    "main.js": "/static/js/main.09a5ef74.js",
+    "main.css": "/static/css/main.9d8a180f.css",
+    "main.js": "/static/js/main.331375b6.js",
+    "static/media/calc-2.jpg": "/static/media/calc-2.16603faa9c7d0f23d36f.jpg",
+    "static/media/calc-1.jpg": "/static/media/calc-1.43829a19d63aa89f218c.jpg",
     "static/media/auticko_a_kamera.jpg": "/static/media/auticko_a_kamera.5724014c90e186bdf64c.jpg",
+    "static/media/calc-3.jpg": "/static/media/calc-3.cfb5fd0401ca883db4ef.jpg",
     "static/media/bootstrap-icons.woff?": "/static/media/bootstrap-icons.1295669cd4e305c97f2c.woff",
     "static/media/bootstrap-icons.woff2?": "/static/media/bootstrap-icons.92ea18a81d737146ff04.woff2",
+    "static/media/scheme.png": "/static/media/scheme.afe84db8e82123fb3178.png",
     "static/media/connect4.jpg": "/static/media/connect4.47d96a0b4f2db9ac063a.jpg",
     "static/media/2.jpg": "/static/media/2.30eb557d6b87a1df240b.jpg",
     "static/media/1.jpg": "/static/media/1.98de65dda4f507b2810e.jpg",
@@ -21,11 +25,11 @@
     "static/media/Obrazok5.png": "/static/media/Obrazok5.71fd0f1de944f12fa5a3.png",
     "static/media/Obrazok4.png": "/static/media/Obrazok4.67b7b6f7f827233ffefb.png",
     "index.html": "/index.html",
-    "main.2c0e7d09.css.map": "/static/css/main.2c0e7d09.css.map",
-    "main.09a5ef74.js.map": "/static/js/main.09a5ef74.js.map"
+    "main.9d8a180f.css.map": "/static/css/main.9d8a180f.css.map",
+    "main.331375b6.js.map": "/static/js/main.331375b6.js.map"
   },
   "entrypoints": [
-    "static/css/main.2c0e7d09.css",
-    "static/js/main.09a5ef74.js"
+    "static/css/main.9d8a180f.css",
+    "static/js/main.331375b6.js"
   ]
 }
