@@ -77,6 +77,7 @@ function App() {
           </div>
           <div className={`nav-links ${menuOpen ? 'open' : ''}`}>
             <HashLink smooth to="/#about" onClick={() => setMenuOpen(false)}>About</HashLink>
+            <HashLink smooth to="/#publications" onClick={() => setMenuOpen(false)}>Publications</HashLink>
             <HashLink smooth to="/#projects" onClick={() => setMenuOpen(false)}>Projects</HashLink>
             <HashLink smooth to="/#skills" onClick={() => setMenuOpen(false)}>Skills</HashLink>
             <HashLink smooth to="/#contact" onClick={() => setMenuOpen(false)}>Contact</HashLink>
@@ -90,31 +91,58 @@ function App() {
           element={
             <>
               <section id="home" className="section home">
-                <h1>Hello, I’m René</h1>
+                <h1>Hello, I’m René Ivančák</h1>
+                <p className="home-subtitle">
+                  PhD student, Department of Computers and Informatics (KPI), Technical University of Košice
+                </p>
+                <p className="home-subtitle">Robotics · Autonomous vehicles · Deep and reinforcement learning</p>
               </section>
 
               <section id="about" className="section">
                 <h2>About Me</h2>
                 <p>
-                  I’m a programmer and DevOps engineer with a passion for turning complex problems into intuitive, user-friendly solutions.
-                  Over the past several years, I’ve built web and mobile applications using React, Node.js, Python, and cloud technologies, 
-                  always striving for clean code, responsive design, and scalable architectures. 
-                  I love learning new tools and frameworks, collaborating with diverse teams, and sharing knowledge through code reviews and tech talks. 
+                  I’m a PhD student at the Department of Computers and Informatics (KPI), Faculty of Electrical Engineering and Informatics,
+                  Technical University of Košice. My research focuses on autonomous mobile robots and small-scale autonomous vehicles:
+                  LiDAR-based localization, reinforcement learning, sim-to-real transfer with digital twins, and connected robots
+                  using private 5G and multi-access edge computing.
                 </p>
 
-                <p> 
+                <p>
+                  Before my PhD I worked as a DevOps engineer at Webasto and as a data engineer at GymBeam, so I like to connect
+                  research prototypes with solid engineering: clean code, automated pipelines and systems that run on real hardware.
+                </p>
+
+                <p>
                   When I’m not coding, you’ll find me exploring our beautiful cities, experimenting with DIY electronics, or hiking in the mountains.
                 </p>
+
+                <h3>Research Interests</h3>
+                <ul>
+                  <li>Autonomous mobile robots and autonomous driving</li>
+                  <li>LiDAR localization and neural networks</li>
+                  <li>Reinforcement learning and sim-to-real transfer</li>
+                  <li>Digital twins and simulation (NVIDIA Isaac Sim)</li>
+                  <li>5G and multi-access edge computing for robotics</li>
+                </ul>
+
                 <div className="about-container">
                   <div className="work-experiences">
                     <h3>Work Experiences</h3>
                     <ul>
                       <li>
-                        Webasto Group - DevOps Engineer (2023-current)
+                        GymBeam - Data Engineer (Sep 2025 - Aug 2026)
                         <ul>
-                          <li>As a DevOps Engineer at Webasto, I manage and optimize the build system—including developing modules to enhance 
-                              stability and scalability. I administer GitLab and Jenkins, and I design CI/CD pipelines to automate testing, builds, and 
-                              production deployments, which speeds up feedback and improves code quality.
+                          <li>Built and maintained data pipelines and transformations for the company’s e-commerce data platform
+                              using Snowflake, BigQuery, Dataform and Keboola.
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        Webasto Group - DevOps Engineer (2023 - Aug 2025)
+                        <ul>
+                          <li>As a DevOps Engineer at Webasto, I managed and optimized the build system, including developing modules to enhance
+                              stability and scalability. I administered GitLab and Jenkins, and designed CI/CD pipelines to automate testing, builds, and
+                              production deployments, which sped up feedback and improved code quality.
                           </li>
                         </ul>
                       </li>
@@ -123,11 +151,26 @@ function App() {
                   <div className="education">
                     <h3>Education</h3>
                     <ul>
-                      <li>M.Sc. in Computer Science, Technical University of Košice (2024-current)</li>
+                      <li>Ph.D. student, Department of Computers and Informatics (KPI), Technical University of Košice (Sep 2026 - current)</li>
+                      <li>M.Sc. in Computer Science, Technical University of Košice (2024 - Apr 2026)</li>
                       <li>B.Sc. in Computer Science, Technical University of Košice (2021-2024)</li>
                     </ul>
                   </div>
                 </div>
+              </section>
+
+              <section id="publications" className="section">
+                <h2>Publications</h2>
+                <ul className="publications-list">
+                  <li>
+                    Šolc, D., <strong>Ivančák, R.</strong>, Gazda, J., Chovancová, E., Šlapák, E., Bugár, G. (2026).{' '}
+                    <em>A 5G-MEC-Enabled, Digital-Twin-Trained Framework for Autonomous Mobile Robots on the ROSMASTER R2 Platform.</em>{' '}
+                    Computers, Materials &amp; Continua, 89(2), 13.{' '}
+                    <a href="https://doi.org/10.32604/cmc.2026.088224" target="_blank" rel="noopener noreferrer">
+                      https://doi.org/10.32604/cmc.2026.088224
+                    </a>
+                  </li>
+                </ul>
               </section>
 
               <section id="projects" className="section">
@@ -227,22 +270,68 @@ function App() {
                     <img src={firebaseLogo} alt="Firebase" style={{width: '2em', height: '2em'}} />
                     <span>Firebase</span>
                   </div>
+                  <div className="icon">
+                    <i className="bi bi-robot" style={{fontSize: '2em', lineHeight: '1'}}></i>
+                    <span>ROS 2</span>
+                  </div>
+                  <div className="icon">
+                    <i className="bi bi-fire" style={{fontSize: '2em', lineHeight: '1'}}></i>
+                    <span>PyTorch</span>
+                  </div>
+                  <div className="icon">
+                    <i className="bi bi-box" style={{fontSize: '2em', lineHeight: '1'}}></i>
+                    <span>Isaac Sim</span>
+                  </div>
+                  <div className="icon">
+                    <i className="bi bi-cpu" style={{fontSize: '2em', lineHeight: '1'}}></i>
+                    <span>Jetson</span>
+                  </div>
+                  <div className="icon">
+                    <i className="bi bi-motherboard" style={{fontSize: '2em', lineHeight: '1'}}></i>
+                    <span>Raspberry Pi</span>
+                  </div>
+                  <div className="icon">
+                    <i className="bi bi-snow" style={{fontSize: '2em', lineHeight: '1'}}></i>
+                    <span>Snowflake</span>
+                  </div>
+                  <div className="icon">
+                    <i className="bi bi-database" style={{fontSize: '2em', lineHeight: '1'}}></i>
+                    <span>BigQuery</span>
+                  </div>
                 </div>
               </section>
 
               <section id="contact" className="section">
                 <h2>Contact</h2>
                 <p>Feel free to reach out to me!</p>
+                <p className="contact-details">
+                  René Ivančák<br />
+                  Department of Computers and Informatics (KPI), Technical University of Košice<br />
+                  University email: <a href="mailto:rene.ivancak@tuke.sk">rene.ivancak@tuke.sk</a><br />
+                  Personal email: <a href="mailto:rene.ivancak@gmail.com">rene.ivancak@gmail.com</a>
+                </p>
                 <div className="icons">
-                  <a href="https://www.linkedin.com/in/ren%C3%A9-ivan%C4%8D%C3%A1k-b69583294"
+                  <a href="mailto:rene.ivancak@tuke.sk" aria-label="Email">
+                    <i className="bi bi-envelope"></i>
+                  </a>
+                  <a href="https://scholar.google.com/citations?user=UNQ13sIAAAAJ"
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label="Google Scholar"
+                  >
+                    <i className="bi bi-mortarboard"></i>
+                  </a>
+                  <a href="https://www.linkedin.com/in/rene-ivancak-b69583294"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="LinkedIn"
                   >
                     <i className="bi bi-linkedin"></i>
                   </a>
                   <a href="https://github.com/Renkooo"
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label="GitHub"
                   >
                     <i className="bi bi-github"></i>
                   </a>

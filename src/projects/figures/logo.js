@@ -1,6 +1,6 @@
 export const expoLogo = "https://images.seeklogo.com/logo-png/45/1/expo-go-app-logo-png_seeklogo-457073.png";
 export const mapboxLogo = "https://images.seeklogo.com/logo-png/31/1/mapbox-logo-png_seeklogo-314273.png";
-export const supabaseLogo = "https://seeklogo.com/images/S/supabase-logo-DCC676FFE2-seeklogo.com.png";
+export const supabaseLogo = process.env.PUBLIC_URL + "/supabase.svg";
 export const figmaLogo = "https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg";
 export const googleMapsLogo = "https://images.seeklogo.com/logo-png/36/1/google-maps-icon-2020-logo-png_seeklogo-368992.png";
 export const pythonLogo = "https://images.seeklogo.com/logo-png/27/1/python-logo-png_seeklogo-273830.png";

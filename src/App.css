@@ -267,3 +267,28 @@ h1, h2, h3 {
     margin: 0.5rem 0;
   }
 }
+
+.home-subtitle {
+  margin: 0.25rem 0;
+  color: var(--gray-4);
+}
+
+.publications-list {
+  padding-left: 1.25rem;
+  line-height: 1.6;
+}
+
+.publications-list li {
+  margin-bottom: 1rem;
+}
+
+.publications-list a,
+.contact-details a {
+  color: inherit;
+  text-decoration: underline;
+  overflow-wrap: anywhere;
+}
+
+.contact-details {
+  line-height: 1.7;
+}
