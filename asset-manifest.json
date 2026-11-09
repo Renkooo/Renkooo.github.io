@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.9d8a180f.css",
-    "main.js": "/static/js/main.331375b6.js",
+    "main.css": "/static/css/main.93ed5cc6.css",
+    "main.js": "/static/js/main.ae360982.js",
     "static/media/calc-2.jpg": "/static/media/calc-2.16603faa9c7d0f23d36f.jpg",
     "static/media/calc-1.jpg": "/static/media/calc-1.43829a19d63aa89f218c.jpg",
     "static/media/auticko_a_kamera.jpg": "/static/media/auticko_a_kamera.5724014c90e186bdf64c.jpg",
@@ -25,11 +25,11 @@
     "static/media/Obrazok5.png": "/static/media/Obrazok5.71fd0f1de944f12fa5a3.png",
     "static/media/Obrazok4.png": "/static/media/Obrazok4.67b7b6f7f827233ffefb.png",
     "index.html": "/index.html",
-    "main.9d8a180f.css.map": "/static/css/main.9d8a180f.css.map",
-    "main.331375b6.js.map": "/static/js/main.331375b6.js.map"
+    "main.93ed5cc6.css.map": "/static/css/main.93ed5cc6.css.map",
+    "main.ae360982.js.map": "/static/js/main.ae360982.js.map"
   },
   "entrypoints": [
-    "static/css/main.9d8a180f.css",
-    "static/js/main.331375b6.js"
+    "static/css/main.93ed5cc6.css",
+    "static/js/main.ae360982.js"
   ]
 }
